@@ -12,7 +12,7 @@
 #include "MultiplyOperation.h"
 #include "DivideOperation.h"
 
-class AbstractOperationFactory
+class OperationFactory
 {
 public:
 
@@ -21,7 +21,7 @@ public:
 };
 
 template<typename T>
-std::unique_ptr<AbstractOperation> AbstractOperationFactory::CreateOperation(char operationCharacter, T operand1, T operand2)
+std::unique_ptr<AbstractOperation> OperationFactory::CreateOperation(char operationCharacter, T operand1, T operand2)
 {
 	switch (operationCharacter)
 	{

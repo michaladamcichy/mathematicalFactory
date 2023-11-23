@@ -1,5 +1,5 @@
 #pragma once
-#include "AbstractOperationFactory.h"
+#include "OperationFactory.h"
 
 class MathematicalParser
 {

@@ -3,7 +3,7 @@
 
 std::tuple<std::string, std::string> MathematicalParser::Parse(const std::string& input)
 {
-	AbstractOperationFactory factory;
+	OperationFactory factory;
 	auto floatingPointDetected{ false };
 
 	std::string operand1;
